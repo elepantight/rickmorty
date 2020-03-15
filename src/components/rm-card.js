@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Card = props => {
-  const { name, species, gender, image, id } = props;
+  const { name, species, gender, image, id, location } = props;
   return (
     <div className="col-sm-6 rm-card-column">
       <div className="card rm-card">
@@ -12,6 +12,8 @@ const Card = props => {
         <b>{species}</b>
         <br />
         <b>{gender}</b>
+        <br />
+        <b>{location.name}</b>
 
         <br />
         <br />

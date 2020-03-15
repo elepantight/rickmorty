@@ -75,6 +75,7 @@ export default class Homepage extends Component {
                         gender={value.gender}
                         created={value.created}
                         image={value.image}
+                        location={value.location.name}
                       />
                     );
                   })
