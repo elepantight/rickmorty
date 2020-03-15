@@ -1,0 +1,85 @@
+header {
+  margin-top: 150px;
+  margin-left: 100px;
+  width: 200px;
+  text-align: center;
+  border-left: 20px solid $l-border;
+  border-top: 20px solid $t-border;
+  border-right: 40px solid $r-border;
+  border-bottom: 40px solid $b-border;
+  background: linear-gradient(to right, #808080 , #696969);
+  h1 {
+    font-size: 3em;
+    font-family: "Eater", cursive;
+    color: $main-font-colour;
+    text-shadow: -1px 0 #87fa6d, 0 6px #87fa6d, 1px 5px #87fa6d, 0 -1px #87fa6d;
+  }
+}
+
+.faqs {
+  margin-top: -210px;
+  width: 100%;
+  max-width: 768px;
+  margin-left: 450px;
+  padding: 10px;
+  border-left: 20px solid $l-border;
+  border-top: 15px solid $t-border;
+  border-right: 20px solid $r-border;
+  border-bottom: 20px solid $b-border;
+  text-align: center;
+}
+.faqs .faq {
+  border-left: 3px solid $l-border;
+  border-top: 3px solid $t-border;
+  border-right: 3px solid $r-border;
+  border-bottom: 3px solid $b-border;
+  background-color: $bg-colour;
+}
+.faqs .faq .faq-question {
+  padding-top: 4px;
+  position: relative;
+  color: $text-colour;
+  font-family: $second-font;
+
+  font-size: 1.4em;
+  padding-right: 80px;
+
+  transition: all 0.6s ease-in-out;
+}
+
+.faqs .faq .faq-question::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+
+  background: url("../../../images/arrowDownBlack.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  transition: all 0.3s ease-out;
+}
+.faqs .faq .faq-answer {
+  font-family: $third-font;
+  color: black;
+  opacity: 0;
+  max-height: 0;
+  overflow-y: hidden;
+  transition: all 0.6s round($number: 6);
+}
+
+.faqs .faq.open .faq-question {
+  margin-bottom: 15px;
+}
+
+.faqs .faq.open .faq-question::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+.faqs .faq.open .faq-answer {
+  max-height: 1000px;
+  opacity: 1;
+}

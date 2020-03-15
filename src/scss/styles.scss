@@ -1,0 +1,23 @@
+/* General */ 
+@import 'partials/variables';
+
+/* Sidor */
+@import "partials/sidor/error";
+@import 'partials/sidor//cards';
+@import 'partials/sidor/about';
+
+/* Components */
+@import "partials/components/navigation";
+
+
+/* Font 
+font-family: "Frijole", cursive;
+font-family: "Gotu", sans-serif;
+font-family: "Rock Salt", cursive;
+font-family: "Cabin Sketch", cursive;
+font-family: "Cutive Mono", monospace;
+font-family: "Eater", cursive;
+font-family: "Slackey", cursive;
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700|Cutive+Mono|Eater|Frijole|Gotu|Rock+Salt|Slackey&display=swap");
